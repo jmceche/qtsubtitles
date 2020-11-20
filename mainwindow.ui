@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>563</width>
+    <height>436</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>OpenSubtitle Downloader</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="OpenBtt">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>20</y>
+      <width>100</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Abrir</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineFilename">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>371</width>
+      <height>33</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl1">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>0</y>
+      <width>161</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nombre de Archivo</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="LangBox">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>200</y>
+      <width>111</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="editable">
+     <bool>true</bool>
+    </property>
+    <property name="currentText">
+     <string>Español</string>
+    </property>
+    <property name="maxVisibleItems">
+     <number>2</number>
+    </property>
+    <item>
+     <property name="text">
+      <string>Español</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Inglés</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="lbl5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>200</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Idioma</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="lstSub">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>240</y>
+      <width>481</width>
+      <height>131</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="HashSearchBtt">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>200</y>
+      <width>100</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Buscar Hash</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="QuitBtt">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>370</y>
+      <width>100</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Salir</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineName">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>60</y>
+      <width>281</width>
+      <height>33</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEpisode">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>140</y>
+      <width>281</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhDigitsOnly</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>69</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nombre</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>150</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Episodio</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>110</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Temporada</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineSeason">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>101</y>
+      <width>281</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhDigitsOnly</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="NameSearchBtt">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>200</y>
+      <width>121</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>Buscar Nombre</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="DownloadBtt">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>370</y>
+      <width>100</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Descargar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl6">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>380</y>
+      <width>211</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>lineFilename</tabstop>
+  <tabstop>OpenBtt</tabstop>
+  <tabstop>lineName</tabstop>
+  <tabstop>lineSeason</tabstop>
+  <tabstop>lineEpisode</tabstop>
+  <tabstop>LangBox</tabstop>
+  <tabstop>HashSearchBtt</tabstop>
+  <tabstop>NameSearchBtt</tabstop>
+  <tabstop>DownloadBtt</tabstop>
+  <tabstop>lstSub</tabstop>
+  <tabstop>QuitBtt</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
