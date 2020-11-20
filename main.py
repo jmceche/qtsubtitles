@@ -21,7 +21,7 @@ class APIdata:
 
 #Clase heredada de QMainWindow (Constructor de ventana)
 class Window(QMainWindow):
-	#Variables flag para determinar que metodo de busqueda se utilizo y 
+	#Variables flag para determinar que metodo de busqueda se utilizo y
 	#asi descargar el subtitulo de distinta manera
 	name_flag = False
 	hash_flag = False
@@ -62,13 +62,13 @@ class Window(QMainWindow):
 								 'Video Files (*.avi *.mkv *.mp4 *.mov *.mpg *.wmv)')
 		if fname:
 			self.lineFilename.setText(fname[0])
-	
+
 	def quitDialog(self):
 		#Desconectar del servidor de API y salir del programa al apretar Cerrar
 		modules.osapi.DisconnectAPI(APIdata.login_data)
 		sys.exit()
 
-#Debo desactivar botones mientras hace la busqueda	
+#Debo desactivar botones mientras hace la busqueda
 
 	#Metodo de busqueda de Hash
 	def hashSearchSub(self):
@@ -89,7 +89,7 @@ class Window(QMainWindow):
 				self.lbl6.setText("No se encontraron subtitulos.")
 		self.HashSearchBtt.setEnabled(True)
 		self.NameSearchBtt.setEnabled(True)
-#Debo bloquear si no hay campos		
+#Debo bloquear si no hay campos
 
 	#Metodo de busqueda por Nombre
 	def nameSearchSub(self):
